@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "polly"
+version = "0.1.0"
+description = ""
+authors = ["Kris <31852063+krisfris@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.14.33"
+appdirs = "^1.4.4"
+nltk = "^3.5"
+pyaudio = "^0.2.11"
+json-rpc = "^1.13.0"
+werkzeug = "^1.0.1"
+requests = "^2.24.0"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
