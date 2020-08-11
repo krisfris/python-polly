@@ -17,9 +17,8 @@ setup(
         'requests', 'click'
     ],
     extras_require={
-        'core': ['appdirs', 'pyaudio', 'nltk', 'boto3', 'werkzeug',
-                 'json-rpc'],
-        'gui': ['pyqt5'],
+        'server': ['appdirs', 'pyaudio', 'nltk', 'boto3', 'werkzeug',
+                   'json-rpc', 'pyqt5']
     },
     entry_points='''
         [console_scripts]

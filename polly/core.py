@@ -25,6 +25,7 @@ import sys
 import unicodedata
 import uuid
 import boto3
+import time
 import sqlite3
 import appdirs
 import logging
@@ -161,6 +162,7 @@ def say(text, voice='Joanna', unit='word'):
     p = pyaudio.PyAudio()
     stream = p.open(format=pyaudio.paInt16, channels=1, rate=16000, output=True)
     synthesize_to_stream(stream, text, voice, unit)
+    time.sleep(1)
     stream.stop_stream()
     stream.close()
     p.terminate()
